@@ -1,0 +1,28 @@
+<!-- SVG Gradient Fill with Stops -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Gradient</title>
+</head>
+<body>
+    <h2>SVG Gradient Example</h2>
+    <svg width="500" hight="400" style="border: 1px solid black;">
+
+        <defs>
+            <linearGradient id="Grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+
+                <stop offset="0%" style="stop-color: blue; stop-opacity: 1"/>
+                <stop offset="100%" style="stop-color: lightblue; stop-opacity: 1"/>
+
+            </linearGradient>
+        </defs>
+
+        <rect x="50" y="50" width="300" height="100" fill="url(#Grad1)" stroke="black" />
+        <circle cx="380" cy="100" r="30" fill="url(#Grad1)" stroke="black"/>
+        <polygon points="460,70 480,150 430,150" fill="url(#Grad1)" stroke="black" stroke-width="2" />
+    </svg>
+</body>
+</html>

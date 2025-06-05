@@ -1,0 +1,56 @@
+<!-- Canvas Drawing using JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas Dr</title>
+</head>
+
+<body>
+    <h2>Canvas Drawing Example</h2>
+    <canvas id="mycanvas" width="500px" height="500px" style="border: 1px solid black;"></canvas>
+
+    <script>
+
+        const canvas = document.getElementById("mycanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Rectangle drawing
+        ctx.fillStyle = "lightgreen";
+        ctx.fillRect(20, 20, 100, 50);
+
+        // circle drawing
+        ctx.beginPath();
+        ctx.arc(350, 50, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "lightred";
+        ctx.fill();
+
+        // line drawing
+        ctx.beginPath();
+        ctx.moveTo(150, 20);
+        ctx.lineTo(250, 70);
+        ctx.strokeStyle = "red";
+        ctx.stroke();
+
+        // triangle 
+        ctx.beginPath();
+        ctx.moveTo(100, 150);
+        ctx.lineTo(50, 200);
+        ctx.lineTo(150, 200);
+        ctx.closePath();
+        ctx.fillStyle = "orange";
+        ctx.fill();
+
+        
+        // find x,y at onclick find easier way 
+        canvas.addEventListener("click", function (e) {
+            console.log("Clicked at x:", e.offsetX, "y:", e.offsetY);
+        });
+
+    </script>
+</body>
+
+</html>
