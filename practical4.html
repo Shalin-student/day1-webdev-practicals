@@ -1,0 +1,110 @@
+<!-- Complete HTML Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            border: 1px solid black;
+            width: 46%;
+            margin: 0 auto;
+            
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        form{
+            width: 50%;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        label{
+            color: brown;
+        }
+        label::after{
+            color: seagreen;
+        }
+        label:hover{
+            color: red;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        
+        select,
+        textarea {
+            border-radius: 10px;
+            border: 1-px solid gray;
+            padding: 5px;
+            
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding: 10px 10px;
+            border: none;
+            cursor: pointer;
+            margin: auto;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <label for="First Name">First Name:</label>
+        <input type="text" id="FName" name="FirstName"placeholder="Enter your First name here" required ><br><br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="LName" name="LastName" placeholder="Enter your Last name here"><br><br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email"placeholder="Enter your Email  here" required><br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password"placeholder="Enter registration password" required><br><br>
+        <label for="Gender">Gender:</label>
+        <label for="Male">Male:</label>
+        <input type="radio" id="Male" name="Male" value="Male">
+        <label for="Female">Female:</label>
+        <input type="radio" id="Female" name="Female" value="Female">
+        <label for="Other">Other:</label>
+        <input type="radio" id="Other" name="Other" value="Other">
+        <br><br>
+        <div>
+            <label for="Country">Country:</label>
+            <select name="Country" id="Country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Hobby">Hobby:</label>
+            <input type="checkbox" id="Reading" name="Hobby" value="Reading">
+            <label for="Reading">Reading</label>
+            <input type="checkbox" id="Traveling" name="Hobby" value="Traveling">
+            <label for="Traveling">Traveling</label>
+            <input type="checkbox" id="Gaming" name="Hobby" value="Gaming">
+            <label for="Gaming">Gaming</label>
+        </div>
+        <br>
+        <label for="Address">Address:</label>
+        <textarea name="Address" id="Address" placeholder="Enter Your address here"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

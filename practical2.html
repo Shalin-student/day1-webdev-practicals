@@ -1,0 +1,38 @@
+<!-- Top <> Bottom Navigation (Anchor Tags) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Top-Bottom Example</title>
+    <style>
+        body{
+            line-height: 1.6;
+        }
+        .section{
+            height: 100vh;
+            padding: 10px;
+        }
+        .top{
+            background-color: gray;
+        }
+        .bottom{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section -->
+    <div class="top section" id="top">
+        <h2>This is Top Section</h2>
+        <p>Click Me To Go Bottom Section</p>
+        <a href="#bottom">Go to Bottom</a>   
+    </div>
+    <!-- Bottom Section -->
+    <div class="bottom section" id="bottom">
+        <h2>This is Bottom Section</h2>
+        <p>Click Me To Go Top Section</p>
+        <a href="#top">Go To Top</a>
+</body>
+</html>
